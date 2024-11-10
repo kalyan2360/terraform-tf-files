@@ -9,11 +9,11 @@ pipeline {
             }
         }
       // moving  to the looptest directory 
-        stage('move to looptest dir'){
-            steps{
-                sh 'cd looptest'
-        }
-        }
+       // stage('move to looptest dir'){
+         //   steps{
+           //     sh 'cd looptest'
+        //}
+        //}
         stage('Terraform Init') {
             steps {
                 // Initialize Terraform
