@@ -9,15 +9,15 @@ pipeline {
             }
         }
       // moving  to the looptest directory 
-       // stage('move to looptest dir'){
-         //   steps{
-           //     sh 'cd looptest'
-        //}
-        //}
+        stage('move to looptest dir'){
+           steps{
+             sh 'cd terraform-tf-files/looptest'
+        }
+        }
         stage('Terraform Init') {
             steps {
                  // Navigate to the specific folder and run Terraform init
-                dir('terraform-tf-files/looptest')
+               // dir('terraform-tf-files/looptest')
                 // Initialize Terraform
                 sh 'terraform init'
             }
