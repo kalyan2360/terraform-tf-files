@@ -17,7 +17,7 @@ pipeline {
         stage('Terraform Init') {
             steps {
                  // Navigate to the specific folder and run Terraform init
-                dir('looptest')
+                dir('terraform-tf-files/looptest')
                 // Initialize Terraform
                 sh 'terraform init'
             }
