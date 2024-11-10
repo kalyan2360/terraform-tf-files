@@ -1,4 +1,4 @@
-
+/*
 terraform {
   cloud {
 
@@ -9,5 +9,4 @@ terraform {
     }
   }
 }
-
-
+*/
